@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Flashcards for Kids</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper_nav">
+    <a href="index.html" class="back_btn">もどる</a>
+    <div id="countdown" class="countdown">20</div>
+  </div>
+  
+
+  <div class="wrapper_flashcard">
+    <div id="flashcard"></div>
+
+    <div id="feedback" class="hidden">
+      <span id="correct" class="hidden">○</span>
+    </div>
+  </div>
+
+  
+
+  <div class="buttons">
+    <button class="note-button" data-note="c">ド</button>
+    <button class="note-button" data-note="d">レ</button>
+    <button class="note-button" data-note="e">ミ</button>
+    <button class="note-button" data-note="f">ファ</button>
+    <button class="note-button" data-note="g">ソ</button>
+    <button class="note-button" data-note="a">ラ</button>
+    <button class="note-button" data-note="b">シ</button>
+  </div>
+  
+  <!-- 音声ファイルの読み込み -->
+  <audio id="audio-c" src="sounds/octave4/1do.mp3"></audio>
+  <audio id="audio-d" src="sounds/octave4/2re.mp3"></audio>
+  <audio id="audio-e" src="sounds/octave4/3mi.mp3"></audio>
+  <audio id="audio-f" src="sounds/octave4/4fa.mp3"></audio>
+  <audio id="audio-g" src="sounds/octave4/5so.mp3"></audio>
+  <audio id="audio-a" src="sounds/octave4/6ra.mp3"></audio>
+  <audio id="audio-b" src="sounds/octave4/7si.mp3"></audio>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vexflow/3.0.9/vexflow-min.js"></script>
+  <script src="js/flashcard.js"></script>
+</body>
+</html>
+

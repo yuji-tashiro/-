@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+	<meta charset="UTF-8">
+	<title>Music Flashcards for Kids</title>
+	<link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="score"></div>
+	<script>
+		window.onload = function() {
+			const urlParams = new URLSearchParams(window.location.search);
+			const score = urlParams.get('score');
+			document.getElementById('score').innerHTML = ` ${score}こ<br>せいかいだよ！`;
+		};
+	</script>
+	<div class="result_btn">
+		<a href="flashcard.html" class="again_btn">もう１かい！</a>
+		<a href="index.html" class="back_btn">もどる</a>
+		
+	</div>
+</body>
+</html>
+
